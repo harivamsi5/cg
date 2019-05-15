@@ -1,0 +1,92 @@
+
+Conversation opened. 2 messages. All messages read.
+
+Skip to content
+Using Gmail with screen readers
+
+1 of 210
+CG lab Manual
+Inbox
+x
+
+Nagalekha Ramesh
+Attachments
+May 8, 2019, 11:29 AM (7 days ago)
+to nagalekha, mythresh, navyanaidu26, Ketan, me, Harini, mns.reddy300, keerthi, akshathaskatta
+
+
+21 Attachments
+
+Ketan Keshav
+Attachments
+May 8, 2019, 11:31 AM (7 days ago)
+to Nagalekha, mythresh, navyanaidu26, me, Harini, mns.reddy300, keerthi, akshathaskatta
+
+Well structured !
+Cheers 
+
+On Wed, May 8, 2019, 11:29 AM Nagalekha Ramesh <nagalekha2009@gmail.com> wrote:
+
+
+Attachments area
+
+#include<GL/glut.h>
+#include<GL/glu.h>
+#include<GL/gl.h>
+#include<stdio.h>
+
+GLfloat vertices[3][3]={{200,200,0},{400,200,0},{300,400,0}};
+GLfloat arb_x=200;
+GLfloat arb_y=200;
+GLfloat rot_angle;
+
+void init()
+{
+	glMatrixMode(GL_PROJECTION);
+	glLoadIdentity();
+	gluOrtho2D(0.0,500.0,0.0,500.0);
+	glClearColor(1.0,1.0,1.0,0.0);
+}
+
+void draw_triangle()
+{
+	glBegin(GL_LINE_LOOP);
+	glVertex3fv(vertices[0]);
+	glVertex3fv(vertices[1]);
+	glVertex3fv(vertices[2]);
+	glEnd();
+}
+
+void display()
+{
+	glClear(GL_COLOR_BUFFER_BIT);
+	glMatrixMode(GL_MODELVIEW);
+	glLoadIdentity();
+	glTranslatef(arb_x,arb_y,0);
+	glRotatef(rot_angle,0,0,1);
+	glTranslatef(-arb_x,-arb_y,0);
+	glColor3f(0.0,1.0,0.0);
+	draw_triangle();
+
+	glMatrixMode(GL_MODELVIEW);
+	glLoadIdentity();
+	glColor3f(1.0,0.0,0.0);
+	draw_triangle();
+	glFlush();
+}
+
+int main(int argc,char **argv)
+{
+	printf("\nEnter the angle of rotation:\n");
+	scanf("%f",&rot_angle);
+
+	glutInit(&argc,argv);
+	glutInitWindowSize(500,500);
+	glutCreateWindow("Rotation of triangle");
+	init();
+	glutDisplayFunc(display);
+	glutMainLoop();
+	return 0;
+}
+exp2a.c
+Displaying exp2a.c.
