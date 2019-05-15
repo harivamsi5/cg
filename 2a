@@ -1,35 +1,3 @@
-
-Conversation opened. 2 messages. All messages read.
-
-Skip to content
-Using Gmail with screen readers
-
-1 of 210
-CG lab Manual
-Inbox
-x
-
-Nagalekha Ramesh
-Attachments
-May 8, 2019, 11:29 AM (7 days ago)
-to nagalekha, mythresh, navyanaidu26, Ketan, me, Harini, mns.reddy300, keerthi, akshathaskatta
-
-
-21 Attachments
-
-Ketan Keshav
-Attachments
-May 8, 2019, 11:31 AM (7 days ago)
-to Nagalekha, mythresh, navyanaidu26, me, Harini, mns.reddy300, keerthi, akshathaskatta
-
-Well structured !
-Cheers 
-
-On Wed, May 8, 2019, 11:29 AM Nagalekha Ramesh <nagalekha2009@gmail.com> wrote:
-
-
-Attachments area
-
 #include<GL/glut.h>
 #include<GL/glu.h>
 #include<GL/gl.h>
@@ -88,5 +56,4 @@ int main(int argc,char **argv)
 	glutMainLoop();
 	return 0;
 }
-exp2a.c
-Displaying exp2a.c.
+
